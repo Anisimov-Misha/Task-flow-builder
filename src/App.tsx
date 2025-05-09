@@ -51,11 +51,13 @@ export default function App() {
 
     // Очистка всіх task
     const clearTasksHandler = () => {
-        setNodes([]);
-        setEdges([]);
-        dispatch(clearTasks())
-        localStorage.removeItem('nodes');
-        localStorage.removeItem('edges');
+        if (confirm('Точно очистити всі задачі?') === true){
+            setNodes([]);
+            setEdges([]);
+            dispatch(clearTasks())
+            localStorage.removeItem('nodes');
+            localStorage.removeItem('edges');
+        }
     }
 
     // Додавання у localStorage при взаємодії

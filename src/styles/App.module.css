@@ -8,11 +8,11 @@
     border-radius: 12px;
     background-color: rgba(173, 216, 230, 0.571);
     @media screen and (max-width: 600px) {
-        width: 98vw;
-        left: calc(50% - 49vw);
+        width: 84vw;
+        left: calc(50% - 42vw);
     }
     @media screen and (max-height: 1000px) {
-        top: 100px;
+        top: 70px;
     }
 }
 .input{
@@ -26,7 +26,7 @@
     font-weight: 700;
     @media (max-width: 600px) {
         width: 170px;
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px;
     }
 }
@@ -50,6 +50,6 @@
     align-items: center;
     margin: 20px 5vw;
     @media (max-width: 600px) {
-        margin: 20px 1vw;
+        margin: 10px 8vw;
     }
 }
